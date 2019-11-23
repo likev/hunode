@@ -21,7 +21,7 @@ cd hunode
 npm install
 ```
 
-3. add some articles in posts, you can write it using markdown.
+3. add some articles in `posts`, you can write it using markdown.
 
 `hello.md`
 ```
@@ -59,7 +59,7 @@ $('.grey-div').click(function(){
 node index.js
 ```
 
-5. the static site is under www
+5. the static site is under `www`
 
 
 
