@@ -4,9 +4,11 @@ a simple static site generator written in Node.js
 ## Features
 1. It is written in Node.js(v10.0+) and ES2017(ES8), You can use it as your static site generator or for learning how to use `await` in [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function).
 
-2. You can include some css or js in a separate article's front-matter.
+2. The generating static site is mobile friendly.
 
-3. You can change the code, it is very simple. The main generator code is `index.js` and it has only 200 lines. The default theme is written in [ES2015 template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) .
+3. You can include some css or js in a separate article's front-matter.
+
+4. You can change the code, it is very simple. The main generator code is `index.js` and it has only 200 lines. The default theme is written in [ES2015 template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) .
 
 ## Demo
 [the-first-article-hello](https://likev.github.io/hunode/the-first-article-hello)
