@@ -15,7 +15,10 @@ const copyDirSync = require('./copyDirSync.js');
 let archiveItem = (data) => {
 
     let updateTimeStr = data.updateTime.format('YYYY年MM月DD日');
-    let item = `<li class="post-item"><div class="post-info">${updateTimeStr}</div><a href="${data.url}" class="post-title-link">${data.articleTitle}</a></li>`;
+    let item = `<li class="post-item">
+    <div class="post-info">${updateTimeStr}</div>
+    <a href="${data.url}" class="post-title-link">${data.articleTitle}</a>
+</li>`;
 
     return item;
 }
@@ -71,7 +74,7 @@ let readMdFile = async (dirPath, file) => {
 
     yamlData.css = yamlData.css || [];
     yamlData.script = yamlData.script || [];
-    yamlData.url = urlPath;
+    yamlData.url = encodeURI(urlPath);
 
 
     postArray.push(yamlData);
